@@ -7,5 +7,8 @@
     'author': 'MIca.',
     'depends': ['website'],
     'data': [
-    ],
+'views/layout.xml',
+    'views/pages.xml','views/assets.xml'
+],
+
 }
