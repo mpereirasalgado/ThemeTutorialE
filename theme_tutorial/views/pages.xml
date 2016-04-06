@@ -26,6 +26,39 @@
             <field name="parent_id" ref="website.main_menu" />
             <field name="sequence" type="int">40</field>
         </record>
+        
+        <template name="Quienes Somos" id="website.quienessomos" page="True">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="container">
+                        <h1>Nuestro Personal</h1>
+                        <ul class="services">
+                            <li>
+                                <p>Gandalf</p>
+                                <div class="avatar" style="background-image: url(/theme_tutorial/static/img/Gandalf-2.jpg)"></div>
+                            </li>
+                            <li>
+                                <p>Ragnar</p>
+                                <div class="avatar" style="background-image: url(/theme_tutorial/static/img/7f4a033c4d54392f8b8806086af8717c.jpg)"></div>
+                            </li>
+                            <li>
+                                <p>Sinatra</p>
+                                <div class="avatar" style="background-image: url(/theme_tutorial/static/img/MTE4MDAzNDEwNjg4MTE2MjM4.jpg)"></div> 
+                            </li>
+                        </ul>
+                        <!-- === Snippets' area === -->
+                        <div class="oe_structure" />
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <record id="quienessomos_page_link" model="website.menu">
+            <field name="name">Quienes Somos</field>
+            <field name="url">/page/quienessomos</field>
+            <field name="parent_id" ref="website.main_menu" />
+            <field name="sequence" type="int">10</field>
+        </record>
 
 
     </data>
